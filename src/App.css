@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #202020;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero,
+.navbar,
+.about,
+.portfolio,
+.footer {
+  padding: 10px;
+}
+
+.navbar {
+  padding-top: 0.8rem;
+  transition: top 0.3s;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.navbar-toggler {
+  margin-left: 90%;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.resume-btn {
+  border-radius: 10px;
+  border: 1px solid #c5effd;
+  background-color: #c5effd;
+}
+
+.resume-btn:hover {
+  box-shadow: 3px 3px 10px #888888;
+}
