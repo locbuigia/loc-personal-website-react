@@ -20,13 +20,15 @@ const Navbar = ({ isAtTop }) => {
         <IoMenuSharp size={26} />
       </button>
       <div className="mx-auto max-w-7xl">
-        <div className="flex sm:items-center sm:justify-center">
+        <div className="flex sm:items-center justify-center">
           <div
-            className={`${showNavMenu ? `flex` : `hidden`}  sm:flex md:ml-auto`}
+            className={`${
+              showNavMenu ? `flex` : `hidden`
+            } flex-col sm:flex md:ml-auto`}
           >
             <div className="flex text-sm">
               <ul className="sm:flex font-thin tracking-wide">
-                <li>
+                <li className="flex justify-center">
                   <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#about"
@@ -36,7 +38,7 @@ const Navbar = ({ isAtTop }) => {
                     </a>
                   </button>
                 </li>
-                <li>
+                <li className="flex justify-center">
                   <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#experience"
@@ -46,7 +48,7 @@ const Navbar = ({ isAtTop }) => {
                     </a>
                   </button>
                 </li>
-                <li>
+                <li className="flex justify-center">
                   <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#projects"
@@ -56,7 +58,7 @@ const Navbar = ({ isAtTop }) => {
                     </a>
                   </button>
                 </li>
-                <li>
+                <li className="flex justify-center">
                   <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#contact"
@@ -66,8 +68,8 @@ const Navbar = ({ isAtTop }) => {
                     </a>
                   </button>
                 </li>
-                <li>
-                  <button onClick={handleMenuClick} className="my-2 mx-0.5">
+                <li className="flex justify-center">
+                  <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href={resume}
                       target="_blank"
