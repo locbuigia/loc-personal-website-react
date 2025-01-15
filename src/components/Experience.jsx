@@ -30,7 +30,7 @@ const Experience = () => {
   return (
     <>
       <a name="experience" />
-      <div className="font-thin font-sans w-full text-center bg-gray-100 py-14">
+      <div className="font-thin font-sans w-full text-center bg-gray-100 py-16">
         <div className="lg:mx-64 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">EXPERIENCE</h1>
           <p className="leading-loose mb-6">
