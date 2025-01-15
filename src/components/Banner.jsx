@@ -8,7 +8,7 @@ const Banner = ({ title = "Loc Bui", subTitle = "Front-end Developer" }) => {
       <a name="top" />
       <div className="w-full h-full">
         <img className="w-full h-screen" src={bannerImg} />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 font-thin font-sans">
+        <div className="absolute inset-0 flex items-center justify-center min-w-60 bg-black bg-opacity-70 font-thin font-sans">
           <img className="w-32 h-32 mr-8 rounded-full" src={photo} />
           <div>
             <h1 className="text-white text-2xl md:text-2xl font-bold">
