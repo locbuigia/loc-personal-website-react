@@ -6,8 +6,8 @@ const Banner = ({ title = "Loc Bui", subTitle = "Front-end Developer" }) => {
   return (
     <>
       <a name="top" />
-      <div className="w-full h-full">
-        <img className="w-full h-screen" src={bannerImg} />
+      <div className="w-full h-full bg-gray-200">
+        <img className="w-full h-screen invisible sm:visible" src={bannerImg} />
         <div className="absolute inset-0 flex items-center justify-center min-w-60 bg-black bg-opacity-70 font-sans">
           <img className="w-32 h-32 mr-8 rounded-full" src={photo} />
           <div>
