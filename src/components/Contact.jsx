@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="font-thin font-sans w-full text-center bg-gray-100 py-16">
         <div className="lg:mx-64 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">CONTACT</h1>
-          <p className="leading-loose mb-6">
+          <p className="tracking-wide leading-loose mb-6">
             Let's connect and discuss how we can create impactful digital
             solutions together!
           </p>

@@ -24,10 +24,10 @@ const Navbar = ({ isAtTop }) => {
           <div
             className={`${showNavMenu ? `flex` : `hidden`}  sm:flex md:ml-auto`}
           >
-            <div className="flex space-x-2 text-sm">
-              <ul className="sm:flex">
+            <div className="flex text-sm">
+              <ul className="sm:flex font-thin tracking-wide">
                 <li>
-                  <button onClick={handleMenuClick} className="my-2">
+                  <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#about"
                       className="text-white hover:bg-gray-600 hover:text-white px-3 py-2 rounded"
@@ -37,7 +37,7 @@ const Navbar = ({ isAtTop }) => {
                   </button>
                 </li>
                 <li>
-                  <button onClick={handleMenuClick} className="my-2">
+                  <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#experience"
                       className="text-white hover:bg-gray-600 hover:text-white px-3 py-2 rounded"
@@ -47,7 +47,7 @@ const Navbar = ({ isAtTop }) => {
                   </button>
                 </li>
                 <li>
-                  <button onClick={handleMenuClick} className="my-2">
+                  <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#projects"
                       className="text-white hover:bg-gray-600 hover:text-white px-3 py-2 rounded"
@@ -57,7 +57,7 @@ const Navbar = ({ isAtTop }) => {
                   </button>
                 </li>
                 <li>
-                  <button onClick={handleMenuClick} className="my-2">
+                  <button onClick={handleMenuClick} className="my-2 mx-1">
                     <a
                       href="#contact"
                       className="text-white hover:bg-gray-600 hover:text-white px-3 py-2 rounded"
@@ -67,7 +67,7 @@ const Navbar = ({ isAtTop }) => {
                   </button>
                 </li>
                 <li>
-                  <button onClick={handleMenuClick} className="my-2">
+                  <button onClick={handleMenuClick} className="my-2 mx-0.5">
                     <a
                       href={resume}
                       target="_blank"

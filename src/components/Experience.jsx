@@ -33,19 +33,19 @@ const Experience = () => {
       <div className="font-thin font-sans w-full text-center bg-gray-100 py-16">
         <div className="lg:mx-64 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">EXPERIENCE</h1>
-          <p className="leading-loose mb-6">
+          <p className="tracking-wide leading-loose mb-6">
             With 8 years of experience in front-end development, I specialize in
             building intuitive, responsive, and visually engaging user
             interfaces. My passion lies in crafting seamless digital experiences
             that not only meet business objectives but also delight users. Here
-            are the technoligies I've been working with lately:{" "}
+            are a few technologies I've been working with lately:{" "}
             <strong>
               ReactJS, React Native, Redux, Javascript, TypeScript, HTML5, CSS3,
               Java
             </strong>
             .
           </p>
-          <h1 className="leading-loose text-xl font-semibold">
+          <h1 className="tracking-wide leading-loose text-xl font-semibold">
             Where I've worked:
           </h1>
           <section className="bg-gray-100 text-left">
@@ -69,21 +69,6 @@ const Experience = () => {
               </div>
             </div>
           </section>
-          {/* <h1 className="leading-loose text-xl font-semibold">
-            Here are the technoligies I've been working with lately:
-          </h1>
-          <div className="flex justify-center items-center bg-white p-6 rounded shadow-lg my-4">
-            <ul className="grid grid-cols-2 gap-x-8 gap-y-4 text-center text-lg font-medium  p-6">
-              <li>React JS</li>
-              <li>React Native</li>
-              <li>Redux</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Typescript</li>
-              <li>Java</li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </>

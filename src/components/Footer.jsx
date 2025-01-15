@@ -11,7 +11,9 @@ const Footer = () => {
               <FaArrowUp size={24} />
             </a>
           </div>
-          <p className="leading-loose my-2">Built by Loc Bui - 2025</p>
+          <p className="tracking-wide leading-loose my-2">
+            Built by Loc Bui - 2025
+          </p>
         </div>
       </div>
     </>

@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <>
       <a name="projects" />
-      <div className="font-thin font-sans w-full text-center py-16">
+      <div className="tracking-wide font-thin font-sans w-full text-center py-16">
         <div className="lg:mx-64 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">PERSONAL PROJECTS</h1>
           <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-8">
@@ -43,7 +43,7 @@ const Projects = () => {
                   target="_blank"
                   className=" bg-white rounded p-2 hover:bg-gray-600 hover:text-white border-2"
                 >
-                  Open Repo
+                  View Source
                 </a>
               </div>
             ))}
