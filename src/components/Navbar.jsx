@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { IoMenuSharp } from "react-icons/io5";
 import resume from "../assets/files/resume.pdf";
 import logo from "../assets/images/loc-logo.png";
-import { IoMenuSharp } from "react-icons/io5";
 
-const Navbar = ({ isAtTop }) => {
+const Navbar = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
   const handleMenuClick = () => setShowNavMenu(!showNavMenu);
+
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -17,13 +31,13 @@ const Navbar = ({ isAtTop }) => {
       }}
       className="flex fixed top-0 w-full text-white z-50 sm:items-center justify-between"
     >
-      <img src={logo} className="w-16 h-16" />
+      <a href="#top">
+        <img src={logo} className="w-16 h-16" />
+      </a>
       <div className="max-w-7xl mr-4">
         <div className="justify-center">
           <div
-            className={`${
-              showNavMenu ? `flex` : `hidden`
-            } flex-col sm:flex md:ml-auto`}
+            className={`${showNavMenu ? `flex` : `hidden`} sm:flex md:ml-auto`}
           >
             <div className="flex text-sm">
               <ul className="sm:flex font-thin tracking-wide">
