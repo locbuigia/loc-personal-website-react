@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import resume from "../assets/files/resume.pdf";
+import logo from "../assets/images/loc-logo.png";
 import { IoMenuSharp } from "react-icons/io5";
 
 const Navbar = ({ isAtTop }) => {
@@ -10,17 +11,15 @@ const Navbar = ({ isAtTop }) => {
     <nav
       style={{
         backgroundColor: isAtTop ? "transparent" : "black",
-        padding: isAtTop ? "15px" : "8px",
+        padding: isAtTop ? "15px" : "0px",
         transition:
           "background-color 0.5s ease-in-out, padding 0.5s ease-in-out",
       }}
-      className="fixed top-0 w-full text-white z-50"
+      className="flex fixed top-0 w-full text-white z-50 sm:items-center justify-between"
     >
-      <button onClick={handleMenuClick} className="sm:hidden">
-        <IoMenuSharp size={26} />
-      </button>
-      <div className="mx-auto max-w-7xl">
-        <div className="flex sm:items-center justify-center">
+      <img src={logo} className="w-16 h-16" />
+      <div className="max-w-7xl mr-4">
+        <div className="justify-center">
           <div
             className={`${
               showNavMenu ? `flex` : `hidden`
@@ -84,6 +83,9 @@ const Navbar = ({ isAtTop }) => {
           </div>
         </div>
       </div>
+      <button onClick={handleMenuClick} className="sm:hidden h-16 mr-4">
+        <IoMenuSharp size={26} />
+      </button>
     </nav>
   );
 };
