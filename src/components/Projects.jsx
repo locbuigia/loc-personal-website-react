@@ -28,7 +28,7 @@ const Projects = () => {
           <div className="overflow-hidden">
             <div
               className={`grid lg:grid-cols-2 grid-flow-row md:grid-cols-1 gap-8 duration-500 -z-50 ${
-                viewMore ? "mt-0" : "-mt-[40rem]"
+                viewMore ? "mt-0" : "-mt-[50rem]"
               } `}
             >
               {moreProjects.map((project, index) => (
