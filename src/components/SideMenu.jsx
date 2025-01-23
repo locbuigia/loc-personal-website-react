@@ -3,10 +3,14 @@ import { MdClose } from "react-icons/md";
 import resume from "../assets/files/resume.pdf";
 import logo from "../assets/images/loc-logo.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Divider from "./Divider";
 
 const SideMenu = ({ showSideMenu, setShowSideMenu }) => {
-  const handleMenuClick = () => {
+  const handleMenuClick = (id) => {
     setShowSideMenu(false);
+    console.log(id);
+    const view = document.getElementById(id);
+    view.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div className="block sm:hidden">
@@ -24,45 +28,52 @@ const SideMenu = ({ showSideMenu, setShowSideMenu }) => {
         >
           <MdClose size={30} />
         </button>
-        <div className="w-full pt-20 pb-10 px-4 flex flex-col items-center justify-between">
+        <div className="w-full pt-24 pb-10 px-4 flex flex-col items-center justify-between">
           <div className="w-full flex flex-col text-2xl space-y-6">
-            <button onClick={handleMenuClick} className=" mx-1">
-              <a
-                href="#about"
-                className=" hover:bg-gray-600  px-3 py-2 rounded"
-              >
+            <button
+              onClick={() => handleMenuClick("about")}
+              className="w-full flex flex-col justify-start mx-1"
+            >
+              <a href="#about" className="px-3 py-2 rounded">
                 ABOUT
               </a>
+              <Divider />
             </button>
-            <button onClick={handleMenuClick} className=" mx-1">
-              <a
-                href="#experience"
-                className=" hover:bg-gray-600  px-3 py-2 rounded"
-              >
+            <button
+              onClick={() => handleMenuClick("experience")}
+              className="w-full flex flex-col justify-start mx-1"
+            >
+              <a href="#experience" className="px-3 py-2 rounded">
                 EXPERIENCE
               </a>
+              <Divider />
             </button>
-            <button onClick={handleMenuClick} className=" mx-1">
-              <a
-                href="#projects"
-                className=" hover:bg-gray-600  px-3 py-2 rounded"
-              >
+            <button
+              onClick={() => handleMenuClick("projects")}
+              className="w-full flex flex-col justify-start mx-1"
+            >
+              <a href="#projects" className="px-3 py-2 rounded">
                 PROJECTS
               </a>
+              <Divider />
             </button>
-            <button onClick={handleMenuClick} className=" mx-1">
-              <a
-                href="#contact"
-                className=" hover:bg-gray-600  px-3 py-2 rounded"
-              >
+            <button
+              onClick={() => handleMenuClick("contact")}
+              className="w-full flex flex-col justify-start mx-1 items-start"
+            >
+              <a href="#contact" className="px-3 py-2 rounded">
                 CONTACTS
               </a>
+              <Divider />
             </button>
-            <button onClick={handleMenuClick} className=" mt-1">
+            <button
+              onClick={handleMenuClick}
+              className="w-full flex flex-col justify-start mt-1"
+            >
               <a
                 href={resume}
                 target="_blank"
-                className="text-black bg-teal-400 hover:bg-gray-700  px-3 py-2 rounded"
+                className="text-black bg-teal-400 px-3 py-2 rounded"
               >
                 RESUME
               </a>

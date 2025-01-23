@@ -1,17 +1,17 @@
 [
   {
-    "title": "ShopEaseWebApp",
+    "title": "ShopEase Web App",
     "description": "ShopEase is a dynamic and user-friendly e-commerce web application built with React, JavaScript, and Redux. With state management powered by Redux, ShopEase ensures real-time updates and a highly interactive user interface.",
     "githubRepo": "https://github.com/locbuigia/shop-ease-web-app",
     "demoUrl": "https://locbui-shopease.netlify.app"
   },
   {
-    "title": "Loc Personal Website",
+    "title": "Loc's Personal Website",
     "description": "I built my personal website using React for a dynamic and interactive user interface, JavaScript for seamless functionality, and CSS Tailwind to design a clean, responsive layout.",
     "githubRepo": "https://github.com/locbuigia/loc-personal-website-react"
   },
   {
-    "title": "GradTrackWebApp",
+    "title": "GradTrack Web App",
     "description": "Using high level of ReactJS with Javascript to manipulate UI with dynamic data using MongoDB for organizing the employment information of graduate students.",
     "githubRepo": "https://github.com/locbuigia/GradTrackWebApp"
   },

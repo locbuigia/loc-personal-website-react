@@ -13,12 +13,17 @@ const App = () => {
 
   return (
     <>
+      <a name="top" id="top" />
       <Navbar showSideMenu={showSideMenu} setShowSideMenu={setShowSideMenu} />
       <SideMenu showSideMenu={showSideMenu} setShowSideMenu={setShowSideMenu} />
       <Banner />
+      <a name="about" id="about" />
       <About />
+      <a name="experience" id="experience" />
       <Experience />
+      <a name="projects" id="projects" />
       <Projects />
+      <a name="contact" id="contact" />
       <Contact />
       <Footer />
     </>

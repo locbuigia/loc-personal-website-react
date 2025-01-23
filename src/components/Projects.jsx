@@ -18,7 +18,6 @@ const Projects = () => {
   };
   return (
     <>
-      <a name="projects" id="projects" />
       <div className="tracking-wide font-thin font-sans w-full text-center py-16">
         <div className="lg:mx-48 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">PERSONAL PROJECTS</h1>
