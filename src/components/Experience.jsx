@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import jobs from "../data/jobs.json";
+import { LuMinus, LuPlus } from "react-icons/lu";
 
 const Experience = () => {
+  const [jobMap, setJobMap] = useState({ ...jobs });
+
+  const handleClick = (id) => {
+    let newJobMap = { ...jobs };
+    newJobMap[id - 1].show = !jobMap[id - 1].show;
+
+    setJobMap(newJobMap);
+  };
+
   return (
     <>
       <a name="experience" />
@@ -31,14 +41,30 @@ const Experience = () => {
                     key={index}
                     className="bg-white p-6 rounded shadow-lg my-4"
                   >
-                    <h3 className="text-2xl font-semibold">{job.title}</h3>
+                    <button
+                      className="w-full flex justify-between items-center"
+                      onClick={() => handleClick(job.id)}
+                    >
+                      <h3 className="text-2xl font-semibold">{job.title}</h3>
+                      {jobMap[index].show ? (
+                        <LuMinus size={24} />
+                      ) : (
+                        <LuPlus size={24} />
+                      )}
+                    </button>
                     <p className="text-gray-600">{job.company}</p>
                     <p className="text-gray-500 italic">{job.timeFrame}</p>
-                    <ul className="list-disc list-inside mt-4 space-y-2">
-                      {job.duties.map((duty, i) => (
-                        <li key={i}>{duty}</li>
-                      ))}
-                    </ul>
+                    <div className="overflow-hidden">
+                      <ul
+                        className={`list-disc list-inside space-y-2 duration-700 ${
+                          jobMap[index].show ? "mt-4" : "-mt-[30rem]"
+                        }`}
+                      >
+                        {job.duties.map((duty, i) => (
+                          <li key={i}>{duty}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>
