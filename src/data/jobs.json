@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Front-End Developer",
     "company": "Saicon Consultants Inc.",
     "timeFrame": "Feb 2020 - Jan 2025",
@@ -9,9 +10,11 @@
       "Created maintainable, and reusable code to manage functionality, deployment, monitoring, performance, scalability, security, and alerting across testing, integration, and production environments.",
       "Planned and executed application enhancements, including reconfiguration, integration, component addition or removal, to improve functionality, resiliency, usability, and security.",
       "Conducted peer code reviews to promote better architectural standards and continuous enhancements."
-    ]
+    ],
+    "show": true
   },
   {
+    "id": 2,
     "title": "Remote Software Engineer",
     "company": "Hive Logiciel LLC.",
     "timeFrame": "Feb 2018 - Dec 2019",
@@ -20,6 +23,7 @@
       "Fulfilled comprehensive analysis of software requirements.",
       "Excelled in providing throughputs in iterations of application development.",
       "Facilitated efforts in association with team workflows."
-    ]
+    ],
+    "show": true
   }
 ]
