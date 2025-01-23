@@ -52,7 +52,7 @@ const SideMenu = ({ showSideMenu, setShowSideMenu }) => {
             </button>
             <button onClick={handleMenuClick} className=" mx-1">
               <a
-                href="#projects"
+                href="#contacts"
                 className=" hover:bg-gray-600  px-3 py-2 rounded"
               >
                 CONTACTS
