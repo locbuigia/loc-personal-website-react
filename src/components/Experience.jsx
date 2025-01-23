@@ -1,32 +1,7 @@
 import React from "react";
+import jobs from "../data/jobs.json";
 
 const Experience = () => {
-  const jobs = [
-    {
-      title: "Front-End Developer",
-      company: "Saicon Consultants Inc.",
-      timeFrame: "Feb 2020 - Jan 2025",
-      duties: [
-        "Provided remote consulting services to Walmart Global Tech.",
-        "Developed, and maintained high-performance front-end applications serving thousands of daily active users across diverse international markets.",
-        "Created maintainable, and reusable code to manage functionality, deployment, monitoring, performance, scalability, security, and alerting across testing, integration, and production environments.",
-        "Planned and executed application enhancements, including reconfiguration, integration, component addition or removal, to improve functionality, resiliency, usability, and security.",
-        "Conducted peer code reviews to promote better architectural standards and continuous enhancements.",
-      ],
-    },
-    {
-      title: "Remote Software Engineer",
-      company: "Hive Logiciel LLC.",
-      timeFrame: "Feb 2018 - Dec 2019",
-      duties: [
-        "United with the company official on a variety of IT projects.",
-        "Fulfilled comprehensive analysis of software requirements.",
-        "Excelled in providing throughputs in iterations of application development.",
-        "Facilitated efforts in association with team workflows.",
-      ],
-    },
-  ];
-
   return (
     <>
       <a name="experience" />
@@ -41,7 +16,7 @@ const Experience = () => {
             are a few technologies I've been working with lately:{" "}
             <strong>
               ReactJS, React Native, Redux, Javascript, TypeScript, HTML5, CSS3,
-              Java
+              CSS Tailwind, Java
             </strong>
             .
           </p>

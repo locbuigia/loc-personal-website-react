@@ -1,53 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import ProjectDetailsCard from "./ProjectDetailsCard";
+import projects from "../data/projects.json";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "GradTrackWebApp",
-      description:
-        "Using high level of ReactJS with Javascript to manipulate UI with dynamic data using MongoDB for organizing the employment information of graduate students.",
-      githubRepo: "https://github.com/locbuigia/GradTrackWebApp",
-    },
-    {
-      title: "GradTrack",
-      description:
-        "Created UI using Java Swing and created a small database using MySQL for organizing the employment information of graduate students.",
-      githubRepo: "https://github.com/locbuigia/GradTrack",
-    },
-    {
-      title: "ParkingApplication",
-      description:
-        "This is a collaborative team project connecting Java Swing with MySQL to create a database that kept track of an organization’s parking lot.",
-      githubRepo: "https://github.com/jnbui94/ParkingApplication",
-    },
-    {
-      title: "OutOfGas",
-      description:
-        "This Android application was to help drivers search nearby gas stations using GPS. This program implemented the Google Maps API to create a map view for users, and made calls to a web service to connect to a database.",
-      githubRepo: "https://github.com/locbuigia/OutOfGas",
-    },
-  ];
+  const [viewMore, setViewMore] = useState(false);
+  const mainProjects = projects.slice(0, 2);
+  const moreProjects = projects.slice(2);
+
+  const handleViewButtonClick = () => {
+    if (viewMore) {
+      const projectView = document.getElementById("projects");
+      projectView.scrollIntoView({ behavior: "smooth" });
+    }
+    setViewMore(!viewMore);
+  };
   return (
     <>
-      <a name="projects" />
+      <a name="projects" id="projects" />
       <div className="tracking-wide font-thin font-sans w-full text-center py-16">
-        <div className="lg:mx-64 md:mx-24 sm:mx-8">
+        <div className="lg:mx-48 md:mx-24 sm:mx-8">
           <h1 className="text-4xl mb-8">PERSONAL PROJECTS</h1>
-          <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-gray-100 p-6 rounded shadow-lg">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-6">{project.description}</p>
-                <a
-                  href={project.githubRepo}
-                  target="_blank"
-                  className=" bg-white rounded p-2 hover:bg-gray-600 hover:text-white border-2"
-                >
-                  View Source
-                </a>
-              </div>
+          <div className="grid lg:grid-cols-2 grid-flow-row md:grid-cols-1 gap-8 z-50 mb-8">
+            {mainProjects.map((project, index) => (
+              <ProjectDetailsCard key={index} project={project} />
             ))}
           </div>
+          <div className="overflow-hidden">
+            <div
+              className={`grid lg:grid-cols-2 grid-flow-row md:grid-cols-1 gap-8 duration-500 -z-50 ${
+                viewMore ? "mt-0" : "-mt-[40rem]"
+              } `}
+            >
+              {moreProjects.map((project, index) => (
+                <ProjectDetailsCard key={index} project={project} />
+              ))}
+            </div>
+          </div>
+          <button className="mt-8" onClick={handleViewButtonClick}>
+            <h1 className="text-xl font-semibold hover:scale-110 duration-300">
+              {`${viewMore ? "See Less" : "See More"}`}
+            </h1>
+          </button>
         </div>
       </div>
     </>
