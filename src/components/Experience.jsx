@@ -57,7 +57,7 @@ const Experience = () => {
                     <div className="overflow-hidden">
                       <ul
                         className={`list-disc list-inside space-y-2 duration-700 ${
-                          jobMap[index].show ? "mt-4" : "-mt-[30rem]"
+                          jobMap[index].show ? "mt-4" : "-mt-[50rem]"
                         }`}
                       >
                         {job.duties.map((duty, i) => (
