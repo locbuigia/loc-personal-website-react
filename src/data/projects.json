@@ -1,7 +1,7 @@
 [
   {
     "title": "ShopEaseWebApp",
-    "description": "ShopEase is a dynamic and user-friendly e-commerce web application built with <strong>React</strong>, JavaScript, and Redux. With state management powered by Redux, ShopEase ensures real-time updates and a highly interactive user interface.",
+    "description": "ShopEase is a dynamic and user-friendly e-commerce web application built with React, JavaScript, and Redux. With state management powered by Redux, ShopEase ensures real-time updates and a highly interactive user interface.",
     "githubRepo": "https://github.com/locbuigia/shop-ease-web-app",
     "demoUrl": "https://locbui-shopease.netlify.app"
   },
