@@ -26,10 +26,10 @@ const Projects = () => {
               <ProjectDetailsCard key={index} project={project} />
             ))}
           </div>
-          <div className="sm: overflow-hidden">
+          <div className="sm:overflow-hidden">
             <div
               className={`grid lg:grid-cols-2 md:grid-cols-1 gap-8 duration-500 -z-50 ${
-                viewMore ? "mt-0" : "-mt-[40rem]"
+                viewMore ? "mt-0 pb-8" : "-mt-[40rem]"
               } `}
             >
               {moreProjects.map((project, index) => (
