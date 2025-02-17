@@ -6,6 +6,12 @@
     "demoUrl": "https://locbui-shopease.netlify.app"
   },
   {
+    "title": "ShopEase Mobile App",
+    "description": "This e-commerce mobile app, built with React Native, TypeScript, and Redux, offers a seamless shopping experience with an intuitive interface, real-time updates, and efficient state management. Users can browse products, manage carts, and enjoy fast performance and smooth navigation.",
+    "githubRepo": "https://github.com/locbuigia/shop-ease-mobile-app",
+    "demoUrl": "src/assets/files/ShopEase-Mobile-App-Demo.webm"
+  },
+  {
     "title": "Loc's Personal Website",
     "description": "I built my personal website using React for a dynamic and interactive user interface, JavaScript for seamless functionality, and CSS Tailwind to design a clean, responsive layout.",
     "githubRepo": "https://github.com/locbuigia/loc-personal-website-react"
@@ -14,11 +20,6 @@
     "title": "GradTrack Web App",
     "description": "Using high level of ReactJS with Javascript to manipulate UI with dynamic data using MongoDB for organizing the employment information of graduate students.",
     "githubRepo": "https://github.com/locbuigia/GradTrackWebApp"
-  },
-  {
-    "title": "GradTrack",
-    "description": "Created UI using Java Swing and created a small database using MySQL for organizing the employment information of graduate students.",
-    "githubRepo": "https://github.com/locbuigia/GradTrack"
   },
   {
     "title": "ParkingApplication",
