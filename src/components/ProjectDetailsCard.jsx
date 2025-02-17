@@ -17,6 +17,7 @@ const ProjectDetailsCard = ({ project }) => {
           <a
             href={project.demoUrl}
             target="_blank"
+            rel="noopener noreferrer"
             className="bg-white rounded p-2 hover:bg-gray-600 hover:text-white border-2 w-fit"
           >
             View Demo
