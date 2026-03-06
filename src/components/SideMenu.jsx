@@ -59,7 +59,7 @@ const SideMenu = ({ showSideMenu, setShowSideMenu }) => {
             </button>
             <button
               onClick={() => handleMenuClick("contact")}
-              className="w-full flex flex-col justify-start mx-1 items-start"
+              className="w-full flex flex-col justify-start mx-1"
             >
               <a href="#contact" className="px-3 py-2 rounded">
                 CONTACTS
