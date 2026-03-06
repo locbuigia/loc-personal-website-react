@@ -2,14 +2,16 @@
   {
     "id": 1,
     "title": "Front-End Developer",
-    "company": "Saicon Consultants Inc.",
-    "timeFrame": "Feb 2020 - Jan 2025",
+    "company": "Saicon Consultants Inc. / UST Global",
+    "timeFrame": "Feb 2020 - Present",
     "duties": [
       "Provided remote consulting services to Walmart Global Tech.",
-      "Developed, and maintained high-performance front-end applications serving thousands of daily active users across diverse international markets.",
-      "Created maintainable, and reusable code to manage functionality, deployment, monitoring, performance, scalability, security, and alerting across testing, integration, and production environments.",
-      "Planned and executed application enhancements, including reconfiguration, integration, component addition or removal, to improve functionality, resiliency, usability, and security.",
-      "Conducted peer code reviews to promote better architectural standards and continuous enhancements."
+      "Architected and delivered enterprise-scale internal applications using React Native, TypeScript, Redux, ContextAPI supporting 100K+ global associates across 8 international markets, generating and saving millions of dollars in operational costs.",
+      "Designed reusable component architecture using React, SCSS, and CSS Modules to improve UI consistency and accelerate feature development.",
+      "Refactored legacy frontend systems into modern React architecture improving performance, scalability, and maintainability.",
+      "Optimized rendering performance through efficient state management, memoization, and component-level improvements.",
+      "Improved engineering productivity and deployment reliability by enhancing Jenkins CI/CD pipelines with automated testing and deployment workflows.",
+      "Collaborated cross-functionally with product managers, designers, and backend engineers to deliver intuitive enterprise workflows."
     ],
     "show": true
   },
@@ -19,10 +21,10 @@
     "company": "Hive Logiciel LLC.",
     "timeFrame": "Feb 2018 - Dec 2019",
     "duties": [
-      "United with the company official on a variety of IT projects.",
-      "Fulfilled comprehensive analysis of software requirements.",
-      "Excelled in providing throughputs in iterations of application development.",
-      "Facilitated efforts in association with team workflows."
+      "Developed full-stack applications using React, Redux, and Java Spring Boot delivering scalable web solutions.",
+      "Designed and improved dashboard UI/UX for GSTV platform using React and Redux.",
+      "Implemented RESTful APIs and backend services for AgendaOrganizer using MeteorJS and Node.js.",
+      "Collaborated in Agile development cycles delivering iterative product improvements with strong focus on maintainability and code quality."
     ],
     "show": true
   }
