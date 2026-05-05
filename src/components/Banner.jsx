@@ -3,7 +3,10 @@ import bannerImg from "../assets/images/coding.jpg";
 import photo from "../assets/images/loc-photo.jpeg";
 import { GoChevronDown } from "react-icons/go";
 
-const Banner = ({ title = "Loc Bui", subTitle = "Front-end Developer" }) => {
+const Banner = ({
+  title = "Loc Bui",
+  subTitle = "Senior Front End Developer",
+}) => {
   return (
     <div className="w-full h-full bg-gray-800">
       <img className="w-full h-screen invisible sm:visible" src={bannerImg} />
