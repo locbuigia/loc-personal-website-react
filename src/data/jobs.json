@@ -6,12 +6,12 @@
     "timeFrame": "Feb 2020 - Present",
     "duties": [
       "Provided remote consulting services to Walmart Global Tech.",
-      "Architected and delivered enterprise-scale internal applications using React Native, TypeScript, Redux, ContextAPI supporting 100K+ global associates across 8 international markets, generating and saving millions of dollars in operational costs.",
-      "Designed reusable component architecture using React, SCSS, and CSS Modules to improve UI consistency and accelerate feature development.",
-      "Refactored legacy frontend systems into modern React architecture improving performance, scalability, and maintainability.",
-      "Optimized rendering performance through efficient state management, memoization, and component-level improvements.",
-      "Improved engineering productivity and deployment reliability by enhancing Jenkins CI/CD pipelines with automated testing and deployment workflows.",
-      "Collaborated cross-functionally with product managers, designers, and backend engineers to deliver intuitive enterprise workflows."
+      "Architected and delivered enterprise-scale internal applications using React, React Native, and TypeScript, supporting 100K+ global associates across 8 international markets and contributing to multi-million dollar operational cost savings.",
+      "Designed and implemented reusable component architecture using React, reduced feature development time by 30% and improved UI consistency across applications.",
+      "Led the modernization of legacy frontend systems into a scalable React architecture, improved page load performance by 35% and significantly enhanced maintainability.",
+      "Optimized rendering performance through efficient state management, memoization, and component-level optimizations, reduced unnecessary re-renders by 40%, improved application responsiveness and user experience",
+      "Enhanced CI/CD pipelines using Jenkins by integrating automated unit and integration tests with Jest, increased test coverage and reduced regression defects in production.",
+      "Led cross-functional collaboration with product managers, designers, and backend engineers to deliver intuitive enterprise workflow, improved usability and adoption across global teams"
     ],
     "show": true
   },
@@ -21,10 +21,10 @@
     "company": "Hive Logiciel LLC.",
     "timeFrame": "Feb 2018 - Dec 2019",
     "duties": [
-      "Developed full-stack applications using React, Redux, and Java Spring Boot delivering scalable web solutions.",
-      "Designed and improved dashboard UI/UX for GSTV platform using React and Redux.",
+      "Developed full-stack applications using React, Redux, and Java Spring Boot delivering scalable web solutions",
+      "Designed and enhanced dashboard UI/UX for GSTV platform, improved usability and user engagement.",
       "Implemented RESTful APIs and backend services for AgendaOrganizer using MeteorJS and Node.js.",
-      "Collaborated in Agile development cycles delivering iterative product improvements with strong focus on maintainability and code quality."
+      "Collaborated in Agile development cycles, delivering iterative product improvements with strong focus on maintainability and code quality."
     ],
     "show": true
   }
